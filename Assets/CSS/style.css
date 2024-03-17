@@ -1,0 +1,42 @@
+@font-face{
+    font-family: "gilroy_bold";
+    src:url(./Fonts/gilroy_bold/Gilroy-Bold.ttf);
+}
+body,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.slide-container{}
+.slide-elements{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    height: 100vh;
+
+}
+.slide-element{
+    width: 290px;
+    height: 390px;
+    border-radius: 5px;
+    text-align: center;
+    position: absolute;
+    transform: scale(0);
+    transition: transform 2s;
+}
+.slide-element img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 12px 32px 0 rgba(0,0,0,0.2);
+}
+.slide-element h2{
+    font-size: 45px;
+    font-weight: "gillroy_bold";
+    color: #6c7171;
+}
+.slide-element.current{
+    transform: scale(1);
+    transition: transform 2s;
+}
